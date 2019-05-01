@@ -28,6 +28,7 @@ class BrownianDynamic:
 
 	def move(self, position=(0, 0), nsteps=100):
 		# -----------to be continue-----------#
+		
 		pass
 		output_list = []
 		#------------end----------------------#
