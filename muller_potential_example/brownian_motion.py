@@ -8,7 +8,7 @@ class BrownianDynamic:
 	kT = 300
 	dt = 0.01
 
-	def __init__(self, gamma=10000, kT=300, dt=0.01):
+	def __init__(self, gamma=10000, kT=300, dt=0.1):
 		self.gamma = gamma
 		self.kT = kT
 		self.dt = dt
@@ -37,7 +37,7 @@ class BrownianDynamic:
 		for i in range(nsteps):
 			dx = 0.01
 			dy = 0.01
-			output_list.append(position_update)
+			output_list.append(tuple(position_update))
 			x = position_update[0]
 			y = position_update[1]
 			U = self.potential((x,y))
@@ -58,6 +58,7 @@ class BrownianDynamic:
 			vy = -D/self.kT*deltaU[1]+math.sqrt(2*D)*fy
 			position_update[0] = position_update[0]+vx*self.dt
 			position_update[1] = position_update[1]+vy*self.dt
+			print(position_update[0], position_update[1])
 		#------------end----------------------#
 		return(output_list.copy())
 
