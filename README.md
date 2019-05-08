@@ -10,3 +10,6 @@ Module required:
 - Pygame
   1. python3 -m pip install -U pygame --user
   2. conda install -c cogsci pygame 
+  
+Update Module:
+  Brownian Motion
