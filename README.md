@@ -13,3 +13,5 @@ Module required:
   
 Update Module:
   Brownian Motion
+
+## 用于找最短且最低自由能的算法
