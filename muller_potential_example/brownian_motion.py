@@ -4,11 +4,11 @@ import numpy as np
 
 class BrownianDynamic:
 
-	gamma = 10000
-	kT = 300
-	dt = 0.01
+	gamma = 100000
+	kT = 30000
+	dt = 0.025
 
-	def __init__(self, gamma=10000, kT=300, dt=0.1):
+	def __init__(self, gamma=100000, kT=30000, dt=0.025):
 		self.gamma = gamma
 		self.kT = kT
 		self.dt = dt
@@ -59,7 +59,7 @@ class BrownianDynamic:
 
 if (__name__ == '__main__'):
 	BD = BrownianDynamic()
-	output = BD.move((0,0), nsteps=100000)
+	output = BD.move((-0.8,0.8), nsteps=10000000)
 	obj_f = open('freeE.dat', 'w')
 	for d in output:
 		obj_f.write(str(d[0]) + '\t' + str(d[1]) + '\n')
