@@ -14,7 +14,7 @@ Module required:
 Update Module:
   Brownian Motion
 
-## 用于找最短且最低自由能的算法
+## 用于找最短且最低自由能路径的算法
 
 查看算法演示：
 cd path_search/
