@@ -15,3 +15,7 @@ Update Module:
   Brownian Motion
 
 ## 用于找最短且最低自由能的算法
+
+查看算法演示：
+cd path_search/
+python Animation4.py
